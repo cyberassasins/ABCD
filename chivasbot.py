@@ -8,17 +8,17 @@ cl = LineAlpha.LINE()
 cl.login(qr=True)
 cl.loginResult()
 
-# kk = LineAlpha.LINE()
-# kk.login(qr=True)
-# kk.loginResult()
+kk = LineAlpha.LINE()
+kk.login(qr=True)
+kk.loginResult()
 
-# ki = LineAlpha.LINE()
-# ki.login(qr=True)
-# ki.loginResult()
+ki = LineAlpha.LINE()
+ki.login(qr=True)
+ki.loginResult()
 
-# kc = LineAlpha.LINE()
-# kc.login(qr=True)
-# kc.loginResult()
+kc = LineAlpha.LINE()
+kc.login(qr=True)
+kc.loginResult()
 
 print "login success"
 reload(sys)
@@ -952,9 +952,9 @@ def bot(op):
             elif msg.text in "Absen":
                 if msg.from_ in admin:
                     cl.sendText(msg.to, "Hadir")
-                    # kc.sendText(msg.to, "Hadir")
-                    # kk.sendText(msg.to, "Hadir")
-                    # ki.sendText(msg.to, "Hadir")
+                    kc.sendText(msg.to, "Hadir")
+                    kk.sendText(msg.to, "Hadir")
+                    ki.sendText(msg.to, "Hadir")
                 else:
                     cl.sendText(msg.to,"Command denied.")
                     cl.sendText(msg.to,"Admin permission required.")
@@ -994,17 +994,17 @@ def nameUpdate():
                 profile.displayName = wait["cName"]
                 cl.updateProfile(profile)
 
-                # profile2 = kk.getProfile()
-                # profile2.displayName = wait["cName2"]
-                # kk.updateProfile(profile2)
+                profile2 = kk.getProfile()
+                profile2.displayName = wait["cName2"]
+                kk.updateProfile(profile2)
 
-                # profile3 = ki.getProfile()
-                # profile3.displayName = wait["cName3"]
-                # ki.updateProfile(profile3)
+                profile3 = ki.getProfile()
+                profile3.displayName = wait["cName3"]
+                ki.updateProfile(profile3)
 
-                # profile4 = kc.getProfile()
-                # profile4.displayName = wait["cName4"]
-                # kc.updateProfile(profile4)
+                profile4 = kc.getProfile()
+                profile4.displayName = wait["cName4"]
+                kc.updateProfile(profile4)
             time.sleep(600)
         except:
             pass
