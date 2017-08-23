@@ -24,8 +24,6 @@ print "login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-kk=ki=kc=cl
-
 helpMessage ="""[Ardh-] Bot(s)
 [Id] - Show Group ID
 [Mid] - Show MyID
